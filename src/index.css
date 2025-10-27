@@ -1,0 +1,39 @@
+* {
+  background-color: black;
+  color: white;
+}
+
+
+.navbar img {
+  max-width: 24px;
+  max-height: 24px;
+}
+.underline {
+  height: 5px;
+  min-width: 80px;
+}
+
+.tech-stack img ,.connect  img{
+  height: 24px;
+  width: 24px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.demo img{
+  width: 26px;
+  height: 26px;
+}
+.top-btn img{
+  width: 26px;
+  height: 26px;
+}
+.neog{
+  text-decoration: none;
+}
