@@ -1,27 +1,39 @@
-import { Link } from "react-router-dom";
+import { ArrowUpRight, CircleArrowUp } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
+
 const Footer = () => {
   return (
-    <>
-      <div className="text-center mt-3 pt-3">
-        <p>&copy; {new Date().getFullYear()} Naga Saketh • All rights reserved</p>
-        <p>
-          Learning full stack development at{" "}
-          <Link className="neog text-success">neog.camp</Link>
-        </p>
+    <footer className="pb-10 pt-8 sm:pb-12">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <Separator className="mb-6" />
+        <div className="fade-up flex flex-wrap items-center justify-between gap-4 text-sm text-slate-400">
+          <p>&copy; {new Date().getFullYear()} Naga Saketh. All rights reserved.</p>
+          <a
+            className="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200"
+            href="https://neog.camp"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Learning full stack at neog.camp
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+        </div>
       </div>
-      <div className="top-btn position-fixed bottom-0 end-0 p-2">
-        <button
-          onClick={() => window.scrollTo(0, 0)}
-          className="btn btn-light rounded-circle p-3"
-        >
-          <img
-            className="img-fluid bg-light"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Top_Arrow.svg/768px-Top_Arrow.svg.png"
-            alt="arrow"
-          />
-        </button>
-      </div>
-    </>
+
+      <button
+        aria-label="Back to top"
+        className={cn(
+          buttonVariants({ size: "icon" }),
+          "pulse-glow fixed bottom-5 right-5 z-50 rounded-full shadow-lg"
+        )}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        type="button"
+      >
+        <CircleArrowUp />
+      </button>
+    </footer>
   );
 };
 
