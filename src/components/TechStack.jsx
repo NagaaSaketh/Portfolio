@@ -1,165 +1,84 @@
+import { Code2, Database, PenTool, ServerCog } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+const stackGroups = [
+  {
+    title: "Frontend",
+    icon: <Code2 className="h-5 w-5 text-emerald-300" />,
+    tools: ["React", "JavaScript", "HTML", "Bootstrap", "Tailwind CSS"],
+  },
+  {
+    title: "Backend",
+    icon: <ServerCog className="h-5 w-5 text-sky-300" />,
+    tools: ["Node.js", "Express", "MongoDB", "REST APIs", "OAuth"],
+  },
+  {
+    title: "Tools & Platform",
+    icon: <Database className="h-5 w-5 text-violet-300" />,
+    tools: ["GitHub", "Vercel", "VS Code", "Python", "Cloudinary"],
+  },
+];
+
 const TechStack = () => {
   return (
-   <div className="py-3">
-            <div className="row my-5">
-              <div className="col-md-8 col-lg-8">
-                <h1 className="display-3 fw-bold mb-2">Tech Stack</h1>
-                <h4 className="text-secondary mt-3">
-                  Technologies & Tools I work with
-                </h4>
-                <div className="underline bg-success mb-5"></div>
-                <div className="tech-stack">
-                  <div className="row g-4">
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/ios_filled/512/FFFFFF/react-native.png"
-                            alt="react"
-                          />
-                        </div>
-                        <span className="fs-5">React</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/ios_filled/512/FFFFFF/javascript.png"
-                            alt="js"
-                          />
-                        </div>
-                        <span className="fs-5">JavaScript</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://i.pinimg.com/564x/b1/75/54/b175549d8268dd656b92e3b56988bdf9.jpg"
-                            alt="html"
-                          />
-                        </div>
-                        <span className="fs-5">HTML</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/ios7/600w/FFFFFF/bootstrap.png"
-                            alt="bootstrap"
-                          />
-                        </div>
-                        <span className="fs-5">Bootstrap</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/androidL/512/FFFFFF/tailwind_css.png"
-                            alt="tailwind"
-                          />
-                        </div>
-                        <span className="fs-5">Tailwind CSS</span>
-                      </div>
-                    </div> 
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/fluent/512w/node-js.png"
-                            alt="node"
-                          />
-                        </div>
-                        <span className="fs-5">Node.js</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/ios7/512w/FFFFFF/express-js.png"
-                            alt="express"
-                          />
-                        </div>
-                        <span className="fs-5">Express</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/?size=512&id=74402&format=png"
-                            alt="mongo"
-                          />
-                        </div>
-                        <span className="fs-5">MongoDB</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/vercel.png"
-                            alt="vercel"
-                          />
-                        </div>
-                        <span className="fs-5">Vercel</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/ios11/512/FFFFFF/github.png"
-                            alt="github"
-                          />
-                        </div>
-                        <span className="fs-5">GitHub</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/carbon_copy/512w/FFFFFF/visual-studio-code-2019.png"
-                            alt="vs-code"
-                          />
-                        </div>
-                        <span className="fs-5">VS Code</span>
-                      </div>
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-4">
-                      <div className="d-flex align-items-center mb-4">
-                        <div className="me-3">
-                          <img
-                            className="img-fluid"
-                            src="https://img.icons8.com/win8/512w/FFFFFF/python.png"
-                            alt="pyt"
-                          />
-                        </div>
-                        <span className="fs-5">Python</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  )
-}
+    <section className="section-anchor py-16 sm:py-20" id="stack">
+      <div className="mx-auto max-w-6xl space-y-10 px-4 sm:px-6 lg:px-8">
+        <div className="space-y-3">
+          <p className="fade-up text-sm font-medium uppercase tracking-[0.2em] text-emerald-300">
+            Tech Stack
+          </p>
+          <h2 className="fade-up delay-1 font-display text-3xl font-bold text-white sm:text-4xl">
+            Technologies and tools I build with.
+          </h2>
+          <p className="fade-up delay-2 max-w-3xl text-base text-slate-300 sm:text-lg">
+            A practical stack focused on shipping products quickly without sacrificing
+            maintainability.
+          </p>
+        </div>
 
-export default TechStack
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {stackGroups.map((group, index) => (
+            <Card
+              key={group.title}
+              className="fade-up border-slate-800/90 bg-slate-950/70"
+              style={{ animationDelay: `${120 + index * 140}ms` }}
+            >
+              <CardHeader className="space-y-3">
+                <div className="inline-flex w-fit items-center gap-2 rounded-full border border-slate-800 bg-slate-900/80 px-3 py-1 text-sm text-slate-300">
+                  {group.icon}
+                  {group.title}
+                </div>
+                <CardTitle className="text-xl text-white">{group.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {group.tools.map((tool) => (
+                    <Badge key={tool} variant="secondary">
+                      {tool}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <Card className="fade-up delay-3 border-slate-800/90 bg-slate-900/60">
+          <CardContent className="flex flex-wrap items-center justify-between gap-3 pt-6">
+            <p className="text-sm text-slate-300 sm:text-base">
+              I keep designs implementation-friendly by aligning UI, APIs, and deployment
+              constraints early in each project.
+            </p>
+            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-sm text-emerald-200">
+              <PenTool className="h-4 w-4" />
+              Product-minded engineering
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  );
+};
+
+export default TechStack;
