@@ -10,6 +10,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import kaviospixCover from "../assets/kaviospix.png";
+import aicover from "../assets/ai_cover.png"
 
 const projects = [
   {
@@ -38,9 +40,32 @@ const projects = [
       "DevConnect is a platform where developers connect, collaborate, and code together.",
     image:
       "https://appinventiv.com/wp-content/uploads/2024/12/how_to_hire_a_cross_platform_developer_all_you_need_to_know.webp",
-    demoLink: "https://major-project2-frontend.vercel.app/",
+    demoLink: "https://dev-connect-collab.vercel.app/login",
     codeLink: "https://github.com/NagaaSaketh/DevConnect_Frontend",
     stack: ["React", "Node.js", "MongoDB", "Express", "Cloudinary", "OAuth"],
+  },
+  {
+    title: "KaviosPix",
+    description:
+      "KaviosPix is a MERN-based image management platform that uses Cloudinary for efficient image storage, with features like album organization, tagging, and secure sharing via Google OAuth.",
+    image: kaviospixCover,
+    demoLink: "https://kaviospix-one.vercel.app/",
+    codeLink: "https://github.com/NagaaSaketh/KaviosPix_FE",
+    stack: ["React", "Node.js", "MongoDB", "Express", "Cloudinary", "OAuth"],
+  },
+  {
+    title: "AI Product Rendering System",
+    description:
+      "Built a generative AI pipeline using ComfyUI and custom-trained Flux LoRA to generate photorealistic product renders across multiple environments with consistent identity, lighting, and reflections.",
+    image: aicover,
+    demoLink: "https://www.loom.com/share/8cc8862a55174f9d939c0bdf1c70115b",
+    codeLink: "https://github.com/NagaaSaketh/Ai_Product_Rendering_System",
+    stack: [
+      "ComfyUI",
+      "Flux LoRA",
+      "SDXL",
+      "Prompt Engineering",
+    ],
   },
 ];
 
@@ -56,8 +81,8 @@ const Projects = () => {
             Turning creativity into real-world solutions.
           </h2>
           <p className="fade-up delay-2 max-w-3xl text-base text-slate-300 sm:text-lg">
-            End-to-end builds that combine polished interfaces, reliable APIs, and
-            practical product flows.
+            End-to-end builds that combine polished interfaces, reliable APIs,
+            and practical product flows.
           </p>
         </div>
 
@@ -74,11 +99,13 @@ const Projects = () => {
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   src={project.image}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
               </div>
 
               <CardHeader className="space-y-2">
-                <CardTitle className="text-xl text-white">{project.title}</CardTitle>
+                <CardTitle className="text-xl text-white">
+                  {project.title}
+                </CardTitle>
                 <CardDescription className="text-sm leading-relaxed text-slate-300">
                   {project.description}
                 </CardDescription>
@@ -96,7 +123,10 @@ const Projects = () => {
 
               <CardFooter className="gap-2">
                 <a
-                  className={cn(buttonVariants({ size: "sm", variant: "outline" }), "w-full")}
+                  className={cn(
+                    buttonVariants({ size: "sm", variant: "outline" }),
+                    "w-full",
+                  )}
                   href={project.demoLink}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -105,7 +135,10 @@ const Projects = () => {
                   Demo
                 </a>
                 <a
-                  className={cn(buttonVariants({ size: "sm", variant: "secondary" }), "w-full")}
+                  className={cn(
+                    buttonVariants({ size: "sm", variant: "secondary" }),
+                    "w-full",
+                  )}
                   href={project.codeLink}
                   rel="noopener noreferrer"
                   target="_blank"

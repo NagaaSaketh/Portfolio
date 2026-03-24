@@ -1,4 +1,4 @@
-import { Code2, Database, PenTool, ServerCog } from "lucide-react";
+import { Brain, Code2, Database, PenTool, ServerCog } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -6,17 +6,54 @@ const stackGroups = [
   {
     title: "Frontend",
     icon: <Code2 className="h-5 w-5 text-emerald-300" />,
-    tools: ["React", "JavaScript", "HTML", "Bootstrap", "Tailwind CSS"],
+    tools: [
+      "React",
+      "JavaScript",
+      "HTML",
+      "Bootstrap",
+      "Tailwind CSS",
+      "ShadCN UI",
+      "DaisyUI",
+    ],
   },
   {
     title: "Backend",
     icon: <ServerCog className="h-5 w-5 text-sky-300" />,
-    tools: ["Node.js", "Express", "MongoDB", "REST APIs", "OAuth"],
+    tools: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST APIs",
+      "JWT Auth",
+      "OAuth",
+      "Cloudinary",
+    ],
+  },
+  {
+    title: "Generative AI",
+    icon: <Brain className="h-5 w-5 text-sky-500" />,
+    tools: [
+      "Python",
+      "ComfyUI",
+      "Flux LoRA",
+      "SDXL",
+      "Prompt Engineering",
+      "RAG ( Learning )",
+      "LLM Tool Calling ( Learning )",
+      
+    ],
   },
   {
     title: "Tools & Platform",
     icon: <Database className="h-5 w-5 text-violet-300" />,
-    tools: ["GitHub", "Vercel", "VS Code", "Python", "Cloudinary"],
+    tools: [
+      "GitHub",
+      "Vercel",
+      "Render",
+      "VS Code",
+      "Postman",
+      "MongoDB Atlas",
+    ],
   },
 ];
 
@@ -32,8 +69,8 @@ const TechStack = () => {
             Technologies and tools I build with.
           </h2>
           <p className="fade-up delay-2 max-w-3xl text-base text-slate-300 sm:text-lg">
-            A practical stack focused on shipping products quickly without sacrificing
-            maintainability.
+            A practical stack focused on shipping products quickly without
+            sacrificing maintainability.
           </p>
         </div>
 
@@ -49,7 +86,9 @@ const TechStack = () => {
                   {group.icon}
                   {group.title}
                 </div>
-                <CardTitle className="text-xl text-white">{group.title}</CardTitle>
+                <CardTitle className="text-xl text-white">
+                  {group.title}
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
@@ -67,8 +106,8 @@ const TechStack = () => {
         <Card className="fade-up delay-3 border-slate-800/90 bg-slate-900/60">
           <CardContent className="flex flex-wrap items-center justify-between gap-3 pt-6">
             <p className="text-sm text-slate-300 sm:text-base">
-              I keep designs implementation-friendly by aligning UI, APIs, and deployment
-              constraints early in each project.
+              I keep designs implementation-friendly by aligning UI, APIs, and
+              deployment constraints early in each project.
             </p>
             <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-sm text-emerald-200">
               <PenTool className="h-4 w-4" />

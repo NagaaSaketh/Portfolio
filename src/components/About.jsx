@@ -14,9 +14,12 @@ const highlights = [
   "React",
   "Node.js",
   "MongoDB",
-  "Express",
   "REST APIs",
-  "Responsive UI",
+  "Cloudinary",
+  "ComfyUI",
+  "Flux LoRA Training",
+  "Prompt Engineering",
+  ,
 ];
 
 const About = () => {
@@ -30,15 +33,18 @@ const About = () => {
 
           <div className="space-y-4">
             <h1 className="fade-up delay-1 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Building clean full-stack experiences that users actually enjoy.
+              Building full-stack applications and AI-powered workflows.
             </h1>
             <p className="fade-up delay-2 max-w-2xl text-base text-slate-300 sm:text-lg">
-              I&apos;m Naga Saketh, a full-stack developer focused on reliable product
-              thinking, smooth front-end interactions, and scalable back-end systems.
+              Full-stack developer building scalable web applications and
+              AI-powered workflows. Hands-on experience with ComfyUI and Flux
+              LoRA for realistic product rendering. Currently learning RAG, tool
+              calling, and AI agent systems.
             </p>
             <p className="fade-up delay-3 max-w-2xl text-base text-slate-400 sm:text-lg">
-              I specialize in React, Node.js, and MongoDB to ship practical web
-              applications with performance and usability in mind.
+              I specialize in React, Node.js, and MongoDB, while also working
+              with ComfyUI, LoRA models, and RAG pipelines to build practical
+              AI-driven products.
             </p>
           </div>
 
@@ -76,14 +82,16 @@ const About = () => {
           <CardHeader className="space-y-2">
             <CardTitle className="text-3xl text-white">Naga Saketh</CardTitle>
             <CardDescription className="text-emerald-200">
-              Full Stack Developer
+              Full Stack Developer | Generative AI Builder
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-5">
             <div className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/70 p-4">
               <BriefcaseBusiness className="h-5 w-5 text-emerald-300" />
               <div>
-                <p className="font-semibold text-slate-200">Project-first approach</p>
+                <p className="font-semibold text-slate-200">
+                  Project-first approach
+                </p>
                 <p className="text-sm text-slate-400">
                   Focused on building production-style applications end-to-end.
                 </p>
@@ -94,8 +102,9 @@ const About = () => {
                 Core Strengths
               </p>
               <p className="mt-2 text-sm leading-relaxed text-slate-300">
-                UI architecture, API integration, authentication flows, and clean
-                code organization for maintainable full-stack products.
+                Full-stack development, API integration, authentication systems,
+                and building generative AI workflows using ComfyUI and custom
+                LoRA models.
               </p>
             </div>
           </CardContent>
