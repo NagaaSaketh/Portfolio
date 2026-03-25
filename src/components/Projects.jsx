@@ -49,7 +49,7 @@ const projects = [
     description:
       "KaviosPix is a MERN-based image management platform that uses Cloudinary for efficient image storage, with features like album organization, tagging, and secure sharing via Google OAuth.",
     image: kaviospixCover,
-    demoLink: "https://kaviospix-one.vercel.app/",
+    demoLink: "https://kaviospix-one.vercel.app/login",
     codeLink: "https://github.com/NagaaSaketh/KaviosPix_FE",
     stack: ["React", "Node.js", "MongoDB", "Express", "Cloudinary", "OAuth"],
   },
