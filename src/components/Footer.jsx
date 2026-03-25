@@ -10,15 +10,6 @@ const Footer = () => {
         <Separator className="mb-6" />
         <div className="fade-up flex flex-wrap items-center justify-between gap-4 text-sm text-slate-400">
           <p>&copy; {new Date().getFullYear()} Naga Saketh. All rights reserved.</p>
-          <a
-            className="inline-flex items-center gap-1 text-emerald-300 hover:text-emerald-200"
-            href="https://neog.camp"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Learning full stack at neog.camp
-            <ArrowUpRight className="h-4 w-4" />
-          </a>
         </div>
       </div>
 

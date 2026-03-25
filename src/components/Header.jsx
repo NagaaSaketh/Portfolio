@@ -3,6 +3,7 @@ import devLogo from "@/assets/dev.png";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
+
 const navItems = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
