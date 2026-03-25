@@ -33,7 +33,6 @@ const stackGroups = [
     title: "Generative AI",
     icon: <Brain className="h-5 w-5 text-sky-500" />,
     tools: [
-      "Python",
       "ComfyUI",
       "Flux LoRA",
       "SDXL",
