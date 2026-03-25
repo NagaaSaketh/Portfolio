@@ -39,7 +39,6 @@ const stackGroups = [
       "Prompt Engineering",
       "RAG ( Learning )",
       "LLM Tool Calling ( Learning )",
-      
     ],
   },
   {

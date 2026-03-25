@@ -47,7 +47,7 @@ const Header = () => {
 
         <div className="fade-up delay-2 flex items-center gap-2">
           <a
-            href="https://drive.google.com/file/d/1ZODHRbUJ5Ea1tX1xdhUhipCf83ARttYm/preview"
+            href="https://drive.google.com/file/d/1ploM_I9tPoHPFzLx_eX_1cLECt52UGpp/preview"
             target="_blank"
             rel="noopener noreferrer"
           >

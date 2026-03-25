@@ -67,7 +67,7 @@ const About = () => {
             </a>
             <a
               className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
-              href="https://drive.google.com/file/d/1ZODHRbUJ5Ea1tX1xdhUhipCf83ARttYm/preview"
+              href="https://drive.google.com/file/d/1ploM_I9tPoHPFzLx_eX_1cLECt52UGpp/preview"
               rel="noopener noreferrer"
               target="_blank"
             >
