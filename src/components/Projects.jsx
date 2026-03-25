@@ -20,7 +20,7 @@ const projects = [
       "A modern e-commerce platform to browse and shop the latest fashion for Men, Women, and Kids.",
     image:
       "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbiUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D",
-    demoLink: "https://project-major-frontend.vercel.app/",
+    demoLink: "https://fashionforte.vercel.app/",
     codeLink: "https://github.com/NagaaSaketh/ProjectMajor_Frontend",
     stack: ["React", "Node.js", "MongoDB", "Express"],
   },
@@ -30,7 +30,7 @@ const projects = [
       "Anvaya CRM helps track leads, assign sales agents, and manage updates throughout the lead lifecycle.",
     image:
       "https://www.subraa.com/there/wp-content/uploads/logo-design-singapore-portfolio/CRM-Software-Company-Logo-Design.jpg",
-    demoLink: "https://major-project2-frontend.vercel.app/",
+    demoLink: "https://crm-anvaya.vercel.app/",
     codeLink: "https://github.com/NagaaSaketh/MajorProject2_Frontend",
     stack: ["React", "Node.js", "MongoDB", "Express", "Chart.js"],
   },
