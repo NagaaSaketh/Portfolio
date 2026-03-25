@@ -82,7 +82,7 @@ const About = () => {
           <CardHeader className="space-y-2">
             <CardTitle className="text-3xl text-white">Naga Saketh</CardTitle>
             <CardDescription className="text-emerald-200">
-              Full Stack Developer | Generative AI Builder
+              Full Stack Developer | Generative AI Enthusiast
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-5">
