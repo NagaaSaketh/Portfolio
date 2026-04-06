@@ -31,20 +31,25 @@ const About = () => {
             Portfolio 2026 Edition
           </Badge>
 
-          <div className="space-y-4">
+          <div className="space-y-5">
             <h1 className="fade-up delay-1 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Building full-stack applications and AI-powered workflows.
             </h1>
             <p className="fade-up delay-2 max-w-2xl text-base text-slate-300 sm:text-lg">
               Full-stack developer building scalable web applications and
-              AI-powered workflows. Hands-on experience with ComfyUI and Flux
-              LoRA for realistic product rendering. Currently learning RAG, tool
-              calling, and AI agent systems.
+              AI-powered workflows.
             </p>
-            <p className="fade-up delay-3 max-w-2xl text-base text-slate-400 sm:text-lg">
-              I specialize in React, Node.js, and MongoDB, while also working
-              with ComfyUI, LoRA models, and RAG pipelines to build practical
-              AI-driven products.
+
+            <p className="fade-up delay-3 max-w-2xl text-base text-slate-300 sm:text-lg">
+              Hands-on experience with ComfyUI and Flux LoRA for realistic
+              product rendering. Currently exploring RAG, tool calling, and AI
+              agent systems.
+            </p>
+
+            <p className="fade-up delay-4 max-w-2xl text-base text-slate-400 sm:text-lg">
+              I specialize in React, Node.js, and MongoDB, with additional
+              experience in ComfyUI, LoRA models, and RAG pipelines to build
+              practical AI-driven products.
             </p>
           </div>
 
@@ -67,7 +72,7 @@ const About = () => {
             </a>
             <a
               className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
-              href="https://drive.google.com/file/d/1ploM_I9tPoHPFzLx_eX_1cLECt52UGpp/preview"
+              href="https://drive.google.com/file/d/1eUuMAIWb-DZSt5eFZhq8FWYW8x_ji1ZV/preview"
               rel="noopener noreferrer"
               target="_blank"
             >
